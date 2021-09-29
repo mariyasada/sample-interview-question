@@ -3,6 +3,8 @@
 
 const url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=sada mariya";
 const url1= "https:/reqres.in/api/unknown/23";
+// const url2 ="https://randomuser.me/api/?results=10"
+
 
 const showbtn = document.querySelector("#showbutton");
 const outputEl = document.querySelector("#output");
@@ -18,10 +20,14 @@ showbtn.addEventListener("click",()=>{
      return response.json();
  })
  .then(json => console.log(json))
- .catch(error=>{
+ .catch(error =>{
      outputEl.innerText= error + " try again later";
  })
 
-
 });
+
+// function errorHandler(error){
+//   console.log("error occured", error);
+//   // outputEl.innerText = 
+// }
 
