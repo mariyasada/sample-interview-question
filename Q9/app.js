@@ -13,8 +13,13 @@ showbtn.addEventListener("click",()=>{
  fetch(url1)
  .then(response => {
 
-     if (!response.ok){
-       throw console.error("something wrong with happened");
+     if (!response.ok)
+     {
+      //   if(response.status===404)
+      //   {
+      //    outputEl.innerText ="page not found";
+      // }
+       throw console.error("something wrong with happened"); 
        
      }
      return response.json();
