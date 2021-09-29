@@ -1,0 +1,23 @@
+/* Show me your portfolio. Okay, I like the button you have made. Can you re create the button without looking at source code? You're free to Google though. */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@400;500&display=swap');
+.linkbutton{
+    text-decoration: none;
+    color:black;
+    width:140px;
+    border: 1px solid #FCD34D;
+    background-color:   #FCD34D;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    margin: 0.6rem auto;
+    padding: 0.6rem ;
+    display: block;
+    text-align: center;
+    box-shadow: 2px 2px 3px gray;
+
+
+}
