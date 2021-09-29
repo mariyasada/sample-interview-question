@@ -12,20 +12,12 @@ const outputEl = document.querySelector("#output");
 showbtn.addEventListener("click",()=>{
  fetch(url1)
  .then(response => {
-
-<<<<<<< HEAD
      if (!response.ok)
      {
       //   if(response.status===404)
       //   {
       //    outputEl.innerText ="page not found";
       // }
-=======
-     if (!response.ok){
-        if(response.status===404){
-         outputEl.innerText ="page not found";
-      }
->>>>>>> 551d643f0aaf80d6f2915faf83bb61b758b7ba38
        throw console.error("something wrong with happened"); 
        
      }
