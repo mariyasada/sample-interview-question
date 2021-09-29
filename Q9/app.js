@@ -14,7 +14,10 @@ showbtn.addEventListener("click",()=>{
  .then(response => {
 
      if (!response.ok){
-       throw console.error("something wrong with happened");
+        if(response.status===404){
+         outputEl.innerText ="page not found";
+      }
+       throw console.error("something wrong with happened"); 
        
      }
      return response.json();
