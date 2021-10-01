@@ -39,19 +39,35 @@ object2={
 function comparePower(obj1,obj2)
 {
     const sumofPowerPoints1 = 35 * (object1.name.length);
-    outputEl.innerText = `sum of power points for ${object1.name } is ${sumofPowerPoints1}`;
     const sumofPowerPoints2 = 35 * (object2.name.length);
-    outputEl.innerText = `sum of power points for ${object2.name } is ${sumofPowerPoints2}`;
+       
+     const totalPowerofobject1 = sumofPowerPoints1 +  (object1.power);
+     const totalPowerofobject2 = sumofPowerPoints2 + (object2.power);
+     console.log(totalPowerofobject1,"ram");
+     console.log(totalPowerofobject2,"krishna");
 
-                if((sumofPowerPoints1 > sumofPowerPoints2) && (object1.power >object2.power))
-                {
-                         outputEl.innerText =`${object1.name} is more powerful than ${object2.name}`; 
-                }
+
+                // if((sumofPowerPoints1 > sumofPowerPoints2) && (object1.power >object2.power))
+                // {
+                //          outputEl.innerText =`${object1.name} is more powerful than ${object2.name}`; 
+                // }
             
-                else
-                    { 
-                        outputEl.innerText =`${object2.name} is more powerful than ${object1.name}`;
-                    }
-}
+                // else
+                //     { 
+                //         outputEl.innerText =`${object2.name} is more powerful than ${object1.name}`;
+                //     }
+                        if(totalPowerofobject1 >totalPowerofobject2)
+                        {
+                            outputEl.innerText =`${object1.name} is more powerful than ${object2.name}`; 
+                        }
+                        else
+                        { 
+                            outputEl.innerText =`${object2.name} is more powerful than ${object1.name}`;
+                        }
+
+
+            }
+
+
 
 comparePower(object1,object2);
