@@ -7,18 +7,24 @@ var fontsize=16;
 
 twoPlusBtn.addEventListener("click",()=>{
     console.log("clicked");
-    input.style.fontSize = (fontsize + 2) + 'px';
+    fontsize +=2;
+    input.style.fontSize = (fontsize) + 'px';
     console.log(input.style.fontSize);
     input.style.color ="green";
 
 });
 twoMinusBtn.addEventListener("click",()=>{
-    input.style.fontSize = (fontsize-2) +'px';
+    fontsize-=2;
+    input.style.fontSize = fontsize + 'px';
+    // input.style.fontSize += (fontsize-2) +'px';
     console.log(input.style.fontSize);
     input.style.color ="red";
 });
 
 plusFive.addEventListener("click",()=>{
-    input.style.fontSize = (fontsize + 5) + 'px';
+    fontsize = fontsize+5;
+    input.style.fontSize = fontsize +'px';
+    console.log(input.style.fontSize);
+    // input.style.fontSize = (fontsize + 5) + 'px';
     console.log(input.style.fontSize);
 })
