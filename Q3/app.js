@@ -5,10 +5,12 @@ const input = document.querySelector("#inputtext");
 const twopxbtn = document.querySelector("#twopixel");
 const fivepxbtn = document.querySelector("#fivepixel");
 
-twopxbtn.addEventListener("click",()=>{
 
+twopxbtn.addEventListener("click",()=>{     
     console.log("clicked");
     input.style.border = " solid 10px";
+    
+    console.log(input.style.border);
 });
 
 fivepxbtn.addEventListener("click",()=>{
