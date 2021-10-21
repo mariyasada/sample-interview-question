@@ -20,7 +20,7 @@ for(let i=0; i < inputValue.length;i++)
         var allString = inputValue.substr(1);
         
     }
-
+   
     var CompleteString = inputFirstLetter + allString;
     
 }
