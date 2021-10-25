@@ -7,5 +7,6 @@ btnConvert.addEventListener("click",()=>{
  var ferenhitToCelcius = (inputValue- 32)* (5/9);
 //  console.log(ferenhitToCelcius);
 inputCelcius.value=ferenhitToCelcius;
-
+inputFerenhit.style.color="red";
+inputCelcius.style.color ="green";
 });
