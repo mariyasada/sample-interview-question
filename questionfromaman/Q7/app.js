@@ -2,18 +2,27 @@
 const inputText = document.querySelector("#input-text");
 const btnStart = document.querySelector("#btn-start");
 const btnStop = document.querySelector("#btn-stop");
-var color =["red","blue","black","pink"];
+// var color =["red","blue","black","pink"];
+var clearVar;
+
 
 btnStart.addEventListener("click",()=>{
    
     // var value = inputText.value;
     console.log("clicked");
-    setInterval(() => {
-        for(let i=0;i< color.length;i++)
-        {
-        inputText.style.color = `${color[i]}`;
-        }
-
-    }, 10);
-
+    // inputText.style.color ="red";
+     clearVar=setInterval(changeColor,300);
 });
+
+function changeColor()
+{
+    inputText.style.color = inputText.style.color==="yellow"?"red":"yellow";
+}
+function stopColor()
+{
+    clearInterval(clearVar);
+}
+
+btnStop.addEventListener("click",()=>{
+    stopColor();
+})

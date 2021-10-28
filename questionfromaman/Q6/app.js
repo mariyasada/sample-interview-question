@@ -14,7 +14,7 @@ btnFetch.addEventListener("click",()=>{
         {
             console.log(json);
             outputEl.innerHTML = `<img src ="${json.avatar_url}"/>`;
-            repoList.innerHTML +=`<p> hello <a href="${json.repos_url}">all repo</a></p>`;  
-            
+            // repoList.innerHTML +=`<p> hello <a href="${json.repos_url}">all repo</a></p>`;  
+            repoList.innerHTML=`<a href ="${json.html_url}"> Name: ${json.name}</a>`;  
         })
 });
