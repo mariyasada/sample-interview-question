@@ -8,6 +8,7 @@ showbtn.addEventListener("click",()=>{
     fetch(url)
     .then(response => response.json())
     .then(json =>{
+        console.log(json);
         
             json.results.map(array =>{
                 if(array.dob.age < 45)
