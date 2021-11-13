@@ -4,16 +4,25 @@ const mainDiv = document.querySelector("#main-div");
 
 var arrayList =[{name:"mariya",age: 25},{name:"aarzoo", age:18},{name:"fida",age: 16},{name:"ahfaaz",age:3}];
 
-btnFetch.addEventListener("click",()=>{
-    console.log("click");
+// btnFetch.addEventListener("click",()=>{
+//     console.log("click");
 
-    arrayList.map(item =>{
-        if(item.age > 23)
-        {
-            outputEl.innerText += `  ${item.name} is ${item.age} year old. ` ;
-        }
-    })
+//     arrayList.map(item =>{
+//         if(item.age > 23)
+//         {
+//             outputEl.innerText += `  ${item.name} is ${item.age} year old. ` ;
+//         }
+//     })
     
+// })
+btnFetch.addEventListener("click",()=>{
+    for(let i=0;i< arrayList.length;i++)
+    {
+        if(arrayList[i].age < 21)
+        {
+            outputEl.innerText += `  ${arrayList[i].name} is ${arrayList[i].age} year old. ` ;
+        }
+    }
 })
 
 //  map function creates a new array by calling a function on every element of array.
