@@ -8,7 +8,7 @@ btnFetch.addEventListener("click",()=>{
     console.log("click");
 
     arrayList.map(item =>{
-        if(item.age < 23)
+        if(item.age > 23)
         {
             outputEl.innerText += `  ${item.name} is ${item.age} year old. ` ;
         }
