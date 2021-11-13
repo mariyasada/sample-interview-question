@@ -15,6 +15,9 @@ btnFetch.addEventListener("click",()=>{
     })
     
 })
+
+//  map function creates a new array by calling a function on every element of array.
+// like array =[1,2,3,4]  and array.map(x=> x + 2);  // resulting array is [3,4,5,6]
 var listElement = document.createElement("li");
 var textNode = document.createTextNode("hello, i am mariya sada");
 mainDiv.appendChild(listElement);
