@@ -19,6 +19,7 @@ showbtn.addEventListener("click",()=>{
       //    outputEl.innerText ="page not found";
       //}
        throw console.error("something wrong with happened"); 
+    // outputEl.innerText ="something wrong with happend";
        
      }
      return response.json();
