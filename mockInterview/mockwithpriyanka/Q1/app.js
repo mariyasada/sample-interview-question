@@ -9,6 +9,9 @@
   {
       inputpassword.style.borderColor ="green";
   }
+  else{
+      inputpassword.style.borderColor ="red";
+  }
 
  });
 
